@@ -1,0 +1,525 @@
+body {
+  background-color: #0b0e14;
+  background-image: 
+    /* The Glow/Vignette Effect */
+    radial-gradient(circle at center, transparent 0%, #0b0e14 80%),
+    /* The Horizontal Lines */
+    linear-gradient(rgba(0, 229, 255, 0.05) 1px, transparent 1px),
+    /* The Vertical Lines */
+    linear-gradient(90deg, rgba(0, 229, 255, 0.05) 1px, transparent 1px);
+    
+  background-size: 100% 100%, 40px 40px, 40px 40px;
+}
+.prefix{
+    font-family: roboto;
+    color: rgb(0, 255, 250);
+    font-weight: bolder;
+}
+.nav-link active{
+    color: rgb(0, 255, 255);
+    font-family: 'roboto', sans-serif;
+    font-weight: bold;
+}
+.nav-link{
+    color: rgb(0, 255, 255);
+    font-family: roboto;
+    font-weight: bold;
+}
+ .main-name {
+    font-size: 80px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color:white;
+  text-align: center;
+  line-height: 1;
+
+}
+.highlight {
+    font-size: 80px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color:rgb(0, 25, 250);
+  text-align: center;
+  line-height: 1;
+}
+h3 {
+    font-family: 'roboto', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+
+}
+
+.des{
+    color: rgb(180, 180, 180);
+    text-align: center;
+    font-size: 18px;
+}
+.uni{
+    color: rgb(0, 255, 255);
+    text-align: center;
+}
+
+.tag{
+    color: rgb(255, 255, 255);
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+.asp{
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    text-align: center;
+    line-height: 1.6;
+}
+button{
+    background-color: rgb(0, 255, 255);
+    font-family: 'roboto', sans-serif;
+    font-weight: bolder;
+    
+}
+button:hover{
+    background-color: rgb(0, 25, 250);
+    transition: all 0.3sec ease;
+    transform: scale(1.1);
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto 0 auto;
+    width: 90%;
+}
+.abt{
+    color: rgb(255, 255, 255);
+    font-family: 'roboto', sans-serif;
+    font-weight: bolder;
+    text-align: right;
+
+}
+.hero-section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    text-align: center;
+    
+}
+.about-section {
+    padding: 100px 0;
+    display: flex;
+    min-height: 100vh;
+}
+.section-title {
+   color: rgb(255, 255, 255);
+    font-family: 'roboto', sans-serif;
+    font-weight: bolder;
+    margin-left: 560px;
+    transition: all 0.3s ease;
+    font-size: 60px;
+}
+.abt-des{
+    text-align: right;
+    color: rgb(180, 180, 180);
+    font-family: roboto;
+    font-weight: lighter;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin-left: 98px;
+    text-align: left;
+    font-size: 18px;
+
+}
+.des-line{
+    text-align: right;
+    color: rgb(255, 255, 255);
+    font-family: roboto;
+    font-weight: bolder;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin-left: 98px;
+    text-align: left;
+    font-size: 18px;
+}
+.imp{
+    color: rgb(255, 255, 255);
+    font-family: 'roboto', sans-serif;
+    font-weight: bolder;
+}
+.imp1{
+    color: rgb(0, 255, 250);
+    font-family: 'roboto', sans-serif;
+    font-weight: bolder;
+}
+.photo-card {
+    /* Base Colors & Shape */
+    background-color: rgb(7, 7, 36); 
+    border-radius: 20px; /* Rounded corners */
+    padding: 0px; /* Space between card edge and photo */
+    
+    /* Layout */
+    max-width: 450px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    
+    /* Hover Transitions */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px; /* Matches the card's rounded look */
+    display: block;
+}
+
+/* Hover Effects */
+.photo-card:hover {
+    transform: scale(1.05); /* Slightly grows */
+    border-color: cyan; /* Border turns cyan */
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.8); /* Strong Cyan Glow */
+}
+.blink{
+    animation: step-blinker 0.8s steps(1) infinite;
+    color: rgb(0, 25, 250);
+    font-weight: bold;
+}
+@keyframes step-blinker {
+    50% {
+        visibility: hidden;
+    }
+}
+.skill-title{
+     color: rgb(255, 255, 255);
+    font-family: 'roboto', sans-serif;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+    font-size: 60px;
+    text-align: center;
+}
+.skills{
+    padding: 100px 0;
+    display: flex;
+    min-height: 100vh;
+}
+.skills-grid {
+    display: grid;
+    /* This creates 3 columns on large screens. If the screen is small, it stacks them. */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 40px 0;
+    max-width: 1000px; /* Limits the overall width of the grid area */
+    margin: 0 auto;    /* Centers the whole grid */
+}
+
+.skill-card {
+    background: rgba(11, 14, 20, 0.8);
+    border: 1px solid rgba(0, 255, 250, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    /* Added this to prevent the card from growing too large */
+    width: 100%; 
+    max-width: 320px; 
+    margin: 0 auto;
+}
+
+/* Mobile Responsive: Change to 1 column if the screen is narrow */
+@media (max-width: 992px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Hover Effect: Border lights up and card lifts */
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 255, 250, 0.5);
+    background: rgba(11, 14, 20, 0.9);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.icon-box {
+    background: rgba(0, 255, 250, 0.1);
+    color: #00fffa;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.skill-card h4 {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.skill-card p {
+    color: #b4b4b4;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Tool Pills Style */
+.tool-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: rgba(0, 255, 250, 0.1);
+    color: #00fffa;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid rgba(0, 255, 250, 0.2);
+}
+.projects{
+     padding: 100px 0;
+    display: flex;
+    min-height: 100vh;
+}
+.project-title{
+    color: rgb(255, 255, 255);
+    font-family: 'roboto', sans-serif;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+    font-size: 60px;
+    text-align: center;
+}
+.projects-grid{
+    display: grid;
+    /* This forces exactly 2 columns of equal width */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
+    padding: 40px 0;
+    max-width: 1000px; /* Limits how wide the whole section gets */
+    margin: 0 auto;    /* Centers the grid on the page */
+}
+.projects-card {
+    background: rgba(11, 14, 20, 0.8);
+    border: 1px solid rgba(0, 255, 250, 0.1);
+    border-radius: 12px;
+    padding: 25px;
+    transition: all 0.3s ease;
+    
+    /* Use percentage for width to ensure they fit side-by-side */
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    max-width: 450px; /* Adjust this number to make them bigger or smaller */
+    min-height: 280px; /* Set your manual height here */
+    margin: 0 auto;    /* Centers the card within its grid column */
+}
+
+/* Mobile Responsive: Change to 1 column if the screen is narrow */
+@media (max-width: 992px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* For tablets and phones */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* Back to one card per row */
+    }
+    
+    .projects-card {
+        max-width: 100%; /* Allows card to take full width on mobile */
+    }
+}
+/* Hover Effect: Border lights up and card lifts */
+.projects-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 255, 250, 0.5);
+    background: rgba(11, 14, 20, 0.9);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+.projects-card h4 {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.projects-card p {
+    color: #b4b4b4;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: auto; /* THIS IS THE SECRET: It pushes everything below it to the bottom */
+    padding-top: 10px;
+}
+.terminal-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #0d1117; /* Dark terminal background */
+    border: 1px solid #00fffa33; /* Faint cyan border */
+    border-radius: 12px;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+/* Header / Title Bar */
+.terminal-header {
+    background-color: #161b22;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #30363d;
+}
+
+.window-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.control {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+.terminal-title {
+    color: #8b949e;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+/* Body Content */
+.terminal-body {
+    padding: 25px;
+    color: #e6edf3;
+}
+
+.command-line {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.prompt {
+    color: #00fffa;
+    margin-right: 10px;
+}
+
+.contact-info {
+    border-left: 2px solid #30363d;
+    margin: 0 0 25px 15px;
+    padding-left: 20px;
+}
+
+.info-item {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.info-item i {
+    color: #00fffa;
+    font-size: 18px;
+}
+
+.label {
+    color: #8b949e;
+}
+
+.value {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.blink {
+    color: #00fffa;
+    font-weight: bold;
+    animation: blinker 1s linear infinite;
+}
+.terminal-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #0d1117;
+    border: 1px solid rgba(0, 255, 250, 0.1); /* Subtle starting border */
+    border-radius: 12px;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    
+    /* Smooth transition for the glow */
+    transition: border-color 0.4s ease, box-shadow 0.4s ease; 
+}
+
+/* Hover Effect: Glow only, no moving/growing */
+.terminal-container:hover {
+    border-color: rgba(0, 255, 250, 0.6); /* Border brightens */
+    
+    /* This creates the neon cyan glow around the card */
+    box-shadow: 0 0 20px rgba(0, 255, 250, 0.2), 
+                0 0 40px rgba(0, 255, 250, 0.1);
+}
+.footer{
+    color: rgb(100, 100, 150);
+    font-family: 'roboto', sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    text-align: center;
+    font-size: smaller;
+}
+html {
+    scroll-behavior: smooth ;
+}
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 20px;
+    
+    /* The capsule shape */
+    border: 1px solid rgba(0, 255, 250, 0.3);
+    border-radius: 50px; 
+    
+    /* Colors and Typography */
+    background: rgba(0, 255, 250, 0.05);
+    color: #00fffa;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+    /* Positioning */
+    margin-bottom: 80px;
+    
+}
+
+.status-badge i {
+    font-size: 16px;
+}
