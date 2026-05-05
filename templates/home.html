@@ -4,26 +4,32 @@
         <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>M.R.M.L.A</title>
+<!-- Add this inside your <head> tag -->
+    <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
  <nav class="navbar navbar-expand-lg bg-dark border-bottom border-secondary" data-bs-theme="dark">
   <div class="container-fluid">
     <!-- Brand Name with Span for Color -->
     <a class="navbar-brand brand-code" href="#">
-      <span class="prefix">>/~M.LUQMAAN ALI</span>
+      <span class="prefix">>_  ~/ M . LUQMAAN ALI</span>
     </a>
 
     <!-- This "navbar-nav" div ensures links stay visible -->
     <div class="navbar-nav">
-      <a class="nav-link active" aria-current="page" href="#">HOME</a>
-      <a class="nav-link" href="#">ABOUT</a>
-      <a class="nav-link" href="#">MY WORKS</a>
+      <a class="nav-link active" aria-current="page" href="#home">HOME</a>
+      <a class="nav-link" href="#about">ABOUT</a>
+      <a class="nav-link" href="#skills">SKILLS</a>
+      <a class="nav-link" href="#projects">MY WORKS</a>
     </div>
   </div>
 </nav>
 
-<style>
-    body {
+    </head>
+    <body>
+        <style>
+            body {
   background-color: #0b0e14;
   background-image: 
     /* The Glow/Vignette Effect */
@@ -35,212 +41,23 @@
     
   background-size: 100% 100%, 40px 40px, 40px 40px;
 }
-.prefix{
-    font-family: roboto;
-    color: rgb(0, 255, 250);
-    font-weight: bold;
-}
-.nav-link active{
-    color: rgb(0, 255, 255);
-    font-family: 'roboto', sans-serif;
-    font-weight: bold;
-}
-.nav-link{
-    color: rgb(0, 255, 255);
-    font-family: roboto;
-    font-weight: bold;
-}
- .main-name {
-    font-size: 80px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  color:white;
-  text-align: center;
-  line-height: 1;
 
-}
-.highlight {
-    font-size: 80px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  color:rgb(0, 25, 250);
-  text-align: center;
-  line-height: 1;
-}
-h3 {
-    font-family: 'roboto', sans-serif;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-
-}
-.am {
-color: rgb(0, 25, 250);
-line-height: 4;
-text-align: center;
-font-family: 'roboto', sans-serif;
-font-size: 30px;
-}
-.who{
-    text-align: center;
-    line-height: 4;
-    font-family: 'roboto', sans-serif;
-    font-size: 30px;
-}
-.des{
-    color: rgb(180, 180, 180);
-    text-align: center;
-    font-size: 18px;
-}
-.uni{
-    color: rgb(0, 255, 255);
-    text-align: center;
-}
-
-.tag{
-    color: rgb(255, 255, 255);
-}
-
-p{
-    font-family: 'Roboto', sans-serif;
-}
-.asp{
-    font-family: 'Roboto', sans-serif;
-    font-size: 26px;
-    text-align: center;
-    line-height: 1.6;
-}
-button{
-    background-color: rgb(0, 255, 255);
-    font-family: 'roboto', sans-serif;
-    font-weight: bolder;
-}
-button:hover{
-    background-color: rgb(0, 25, 250);
-    transition: all 0.3sec ease;
-    transform: scale(1.1);
-}
-.container{
-    max-width: 1100px;
-    margin: 0 auto 0 auto;
-    width: 90%;
-}
-.abt{
-    color: rgb(255, 255, 255);
-    font-family: 'roboto', sans-serif;
-    font-weight: bolder;
-    text-align: right;
-
-}
-.hero-section{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-}
-.about-section {
-    padding: 100px 0;
-    display: flex;
-    border-top: 1px solid rgba(0, 229, 255, 0.1);
-    min-height: 90vh;
-}
-.section-title {
-   color: rgb(255, 255, 255);
-    font-family: 'roboto', sans-serif;
-    font-weight: bolder;
-    margin-left: 560px;
-    transition: all 0.3s ease;
-    font-size: 60px;
-}
-.abt-des{
-    text-align: right;
-    color: rgb(180, 180, 180);
-    font-family: roboto;
-    font-weight: lighter;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    margin-left: 98px;
-    text-align: left;
-    font-size: 18px;
-
-}
-.des-line{
-    text-align: right;
-    color: rgb(255, 255, 255);
-    font-family: roboto;
-    font-weight: bolder;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    margin-left: 98px;
-    text-align: left;
-    font-size: 18px;
-}
-.imp{
-    color: rgb(255, 255, 255);
-    font-family: 'roboto', sans-serif;
-    font-weight: bolder;
-}
-.imp1{
-    color: rgb(0, 255, 250);
-    font-family: 'roboto', sans-serif;
-    font-weight: bolder;
-}
-.photo-card {
-    /* Base Colors & Shape */
-    background-color: rgb(7, 7, 36); 
-    border-radius: 20px; /* Rounded corners */
-    padding: 0px; /* Space between card edge and photo */
-    
-    /* Layout */
-    max-width: 450px;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    
-    /* Hover Transitions */
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-    border: 2px solid transparent;
-    cursor: pointer;
-}
-
-.profile-img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px; /* Matches the card's rounded look */
-    display: block;
-}
-
-/* Hover Effects */
-.photo-card:hover {
-    transform: scale(1.05); /* Slightly grows */
-    border-color: cyan; /* Border turns cyan */
-    box-shadow: 0 0 30px rgba(0, 255, 255, 0.8); /* Strong Cyan Glow */
-}
-.blink{
-    animation: step-blinker 0.8s steps(1) infinite;
-    color: rgb(0, 25, 250);
-    font-weight: bold;
-}
-@keyframes step-blinker {
-    50% {
-        visibility: hidden;
-    }
-}
-</style>
-    </head>
-    <body>
-<section class="hero-section">
+        </style>
+<section id="home" class="hero-section">
      <div class="container">   
-<h3 class="who">>who<span class="am">am</span>i</h3>
+        <div class="status-badge">
+    <i class="bi bi-shield-check"></i>
+    <span>FIRST YEAR · CYBER SECURITY</span>
+</div>
 <h1 class="main-name">M.R.M.<span class="highlight">LUQMAAN ALI</span><span class="blink">_</span></h1>
 <h3 class="asp">Aspiring Cyber Security Professional...</h3>
 <p class="des">Breaking things to learn how to protect them.<br> Currently diving into network security, ethical hacking, and cryptography at <br><span class= "uni">Staffordshire University.</span></p>
 <div style="text-align: center;">   
-<button type="button" class="btn btn-info">DOWNLOAD CV</button>, <button type="button" class="btn btn-info">CONTACT ME!</button>
+<button type="button" class="btn btn-info"><a href="#projects">VIEW PROJECTS</a></button>, <button type="button" class="btn btn-info"><a href="#contact">CONTACT ME!</a></button>
 </div>
      </div>
 </section>
-<section class="about-me">
+<section id="about" class="about-me">
     <div class="container">
         <h2 class="section-title">About Me</h2>
         <div class="row align-items-center">
@@ -248,7 +65,7 @@ button:hover{
     <!-- Clean Cyber Card -->
     <div class="photo-card" id="tilt-card">
         <div class="card-inner">
-            <img src="D:\luqmaans-portfolio-website\images\dp.jpg" alt="M.R.M. Luqmaan Ali" class="profile-img">
+            <img src="assets/profile.jpg" alt="M.R.M. Luqmaan Ali" class="profile-img">
         </div>
     </div>
 </div>
@@ -264,5 +81,208 @@ button:hover{
         </div>
     </div>
 </section>
+<section id=skills class="skills">
+    <div class="container">
+        <h2 class="skill-title">Skills & Tools</h2>
+        <div class="skills-grid">
+            <!-- Skill Card 1 -->
+            <div class="skill-card">
+                <div class="card-header">
+                    <div class="icon-box">
+                        <i class="bi bi-diagram-3"></i> <!-- Using Bootstrap Icons -->
+                    </div>
+                    <h4>Networking</h4>
+                </div>
+                <p>TCP/IP, OSI model, packet analysis with Wireshark</p>
+                <div class="tool-tags">
+                    <span class="tag">Wireshark</span>
+                    <span class="tag">Nmap</span>
+                </div>
+            </div>
+
+            <!-- Repeat for other skills like PenTesting, Cryptography, etc. -->
+            <div class="skill-card">
+                <div class="card-header">
+                    <div class="icon-box">
+                        <i class="bi bi-bug"></i> <!-- Using Bootstrap Icons -->
+                    </div>
+                    <h4>PenTesting</h4>
+                </div>
+                <p>Basic recon, vulnerability scanning, exploitation practice</p>
+                <div class="tool-tags">
+                    <span class="tag">Metasploit</span>
+                    <span class="tag">Burp Suit</span>
+                </div>
+            </div>
+            <!-- Cryptography-->
+             <div class="skill-card">
+                <div class="card-header">
+                    <div class="icon-box">
+                        <i class="bi bi-lock"></i> <!-- Using Bootstrap Icons -->
+                    </div>
+                    <h4>Cryptography</h4>
+                </div>
+                <p>Symmetric/asymmetric encryption, hashing fundamentals</p>
+                <div class="tool-tags">
+                    <span class="tag">AES</span>
+                    <span class="tag">RSA</span>
+                </div>
+            </div>
+            <!-- Linux & Bash-->
+             <div class="skill-card">
+                <div class="card-header">
+                    <div class="icon-box">
+                        <i class="bi bi-terminal"></i> <!-- Using Bootstrap Icons -->
+                    </div>
+                    <h4>Linux & Bash</h4>
+                </div>
+                <p>Daily driver on Kali & Ubuntu, shell scripting</p>
+                <div class="tool-tags">
+                    <span class="tag">Kali</span>
+                    <span class="tag">Bash</span>
+                </div>
+            </div>
+            <!-- Programming-->
+             <div class="skill-card">
+                <div class="card-header">
+                    <div class="icon-box">
+                        <i class="bi bi-code-slash"></i> <!-- Using Bootstrap Icons -->
+                    </div>
+                    <h4>Programming</h4>
+                </div>
+                <p>Scripting for automation and security tooling</p>
+                <div class="tool-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">C</span>
+                </div>
+            </div>
+            <!-- defensive security-->
+             <div class="skill-card">
+                <div class="card-header">
+                    <div class="icon-box">
+                        <i class="bi bi-shield"></i> <!-- Using Bootstrap Icons -->
+                    </div>
+                    <h4>defensive Security</h4>
+                </div>
+                <p>Logging, monitoring, and incident response basics</p>
+                <div class="tool-tags">
+                    <span class="tag">Splunk</span>
+                    <span class="tag">Snort</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="projects" class="projects">
+    <div class="container">
+        <h2 class="project-title">PROJECTS & LABS</h2>
+        <div class="projects-grid">
+
+            <!--Password Strength Analyzer -->
+             <div class="projects-card">
+                <div class="card-header">
+                    <div class="icon-box">
+                        <i class="bi bi-key"></i> <!-- Using Bootstrap Icons -->
+                    </div>
+                    <h4>Password Strength Analyzer</h4>
+                </div>
+                <p>A Python tool that evaluates password strength using entropy calculations and checks against known breach lists.</p>
+                <div class="tool-tags">
+                    <span class="tag">python</span>
+                    <span class="tag">hashlib</span>
+                </div>
+            </div>
+<!--Home Lab Network Monitor -->
+             <div class="projects-card">
+                <div class="card-header">
+                    <div class="icon-box">
+                        <i class="bi bi-radar"></i> <!-- Using Bootstrap Icons -->
+                    </div>
+                    <h4>Home Lab Network Monitor</h4>
+                </div>
+                <p>Built a virtual lab with pfSense firewall and Security Onion to detect suspicious traffic patterns.</p>
+                <div class="tool-tags">
+                    <span class="tag">pfsence</span>
+                    <span class="tag">Suricata</span>
+                </div>
+            </div>
+            <!--TryHackMe Writeups-->
+             <div class="projects-card">
+                <div class="card-header">
+                    <div class="icon-box">
+                        <i class="bi bi-flag"></i> <!-- Using Bootstrap Icons -->
+                    </div>
+                    <h4>TryHackMe Writeups</h4>
+                </div>
+                <p>Documented solutions to 15+ beginner and intermediate rooms, covering web exploitation, privilege escalation, and forensics.</p>
+                <div class="tool-tags">
+                    <span class="tag">CTF</span>
+                    <span class="tag">Markdown</span>
+                </div>
+            </div>
+            <!--Mini Port Scanner-->
+             <div class="projects-card">
+                <div class="card-header">
+                    <div class="icon-box">
+                        <i class="bi bi-code-square"></i> <!-- Using Bootstrap Icons -->
+                    </div>
+                    <h4>Mini Port Scanner</h4>
+                </div>
+                <p>Learning socket programming by building a multi-threaded port scanner from scratch in Python.</p>
+                <div class="tool-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Sockets</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="terminal-container">
+    <!-- Window Title Bar -->
+    <div class="terminal-header">
+        <div class="window-controls">
+            <span class="control red"></span>
+            <span class="control yellow"></span>
+            <span class="control green"></span>
+        </div>
+        <div class="terminal-title">~/contact.sh</div>
+    </div>
+    
+    <!-- Terminal Body -->
+    <div class="terminal-body">
+        <div class="command-line">
+            <span class="prompt">$</span> contact.txt
+        </div>
+        
+        <div class="contact-info">
+            <div class="info-item">
+                <i class="bi bi-envelope"></i>
+                <span class="label">email:</span>
+                <span class="value">mrmluqmaanali27@gmail.com</span>
+            </div>
+            <div class="info-item">
+                <i class="bi bi-github"></i>
+                <span class="label">github:</span>
+                <span class="value">@mrmluqmaanali</span>
+            </div>
+            <div class="info-item">
+                <i class="bi bi-geo-alt"></i>
+                <span class="label">location:</span>
+                <span class="value">Staffordshire / APIIT</span>
+            </div>
+        </div>
+        
+        <div class="command-line">
+            <span class="prompt">$</span> "Let's build something secure together."<span class="blink">_</span>
+        </div>
+    </div>
+</div>
+    </div>
+</section>
+<footer>
+    <h6 class="footer">© 2025 m.r.m. luqmaan ali. Stay secure.</h6>
+</footer>
 </body>
 </html>
