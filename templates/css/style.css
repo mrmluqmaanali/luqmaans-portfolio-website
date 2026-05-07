@@ -71,6 +71,7 @@ p{
     font-size: 26px;
     text-align: center;
     line-height: 1.6;
+    color: rgb(255, 255, 255);
 }
 button{
     background-color: rgb(0, 255, 255);
@@ -522,4 +523,172 @@ html {
 
 .status-badge i {
     font-size: 16px;
+}
+.education-title {
+    color: rgb(255, 255, 255);
+    font-family: 'roboto', sans-serif;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+    font-size: 60px;
+    text-align: center;
+}
+.edu-card {
+    background: rgba(11, 14, 20, 0.8);
+    border: 1px solid rgba(0, 255, 250, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden; /* Keeps the background icon inside the corners */
+    max-width: 800px;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+    margin-top: 60px;
+}
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+.edu-info h3 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    color: #ffffff;
+}
+.edu-des {
+    font-family: 'Courier New', monospace;
+    color: #8b949e;
+    margin: 0;
+}
+/* The Pursuing Badge */
+.status-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #00fffa;
+    color: #00fffa;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.dot-active {
+    width: 8px;
+    height: 8px;
+    background-color: #27c93f;
+    border-radius: 50%;
+    display: inline-block;
+}
+/* Tags at the bottom */
+.edu-tags {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.edu-tag {
+    border: 1px solid rgba(0, 255, 250, 0.3);
+    color: #00fffa;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 13px;
+}
+.edu-card:hover {
+    border-color: rgba(0, 255, 250, 0.6);
+    box-shadow: 0 0 20px rgba(0, 255, 250, 0.1);
+}
+.education{
+     padding: 100px 0;
+    display: flex;
+    min-height: 100vh;
+}
+.crnt-stu-badge{
+     display: flex;
+     width: fit-content;
+     margin-left: auto;
+     margin-right: auto;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 20px;
+    
+    /* The capsule shape */
+    border: 1px solid rgba(0, 255, 250, 0.3);
+    border-radius: 50px; 
+    
+    /* Colors and Typography */
+    background: rgba(0, 255, 250, 0.05);
+    color: #00fffa;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+    /* Positioning */
+    margin-bottom: 80px;
+    margin-top: 60px;
+}
+.crnt-stu-badge i {
+ font-size: 16px;
+}
+.certificate-card {
+    background: rgba(11, 14, 20, 0.8);
+    display: flex;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 255, 250, 0.2);
+    padding: 30px;
+    max-width: 600px;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+
+   
+
+}
+.certificate-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.certificate-card:hover{
+    border-color: rgba(0, 255, 250, 0.6);
+    box-shadow: 0 0 20px rgba(0, 255, 250, 0.1);
+}
+.certificate-info h3{
+    padding-right: 120px;
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    color: #ffffff;
+}
+.certi-pill{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    
+     display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #00fffa;
+    color: #00fffa;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: fit-content;
+}
+.cert-grid{
+    display: grid;
+    /* This tells the browser: "Make 2 columns of equal width" */
+    grid-template-columns: 1fr 1fr; 
+    
+    /* This creates space between the cards so they don't touch */
+    gap: 20px;
+}
+@media (max-width: 768px) {
+    .certs-grid {
+        /* On mobile, switch back to 1 column */
+        grid-template-columns: 1fr; 
+    }
 }
