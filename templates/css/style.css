@@ -121,7 +121,7 @@ button:hover{
 .abt-des{
     text-align: right;
     color: rgb(180, 180, 180);
-    font-family: roboto;
+    font-family: 'Courier New', monospace;
     font-weight: lighter;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -133,7 +133,7 @@ button:hover{
 .des-line{
     text-align: right;
     color: rgb(255, 255, 255);
-    font-family: roboto;
+    font-family: 'Courier New', monospace;
     font-weight: bolder;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -143,12 +143,12 @@ button:hover{
 }
 .imp{
     color: rgb(255, 255, 255);
-    font-family: 'roboto', sans-serif;
+    font-family: 'Courier New', monospace;
     font-weight: bolder;
 }
 .imp1{
     color: rgb(0, 255, 250);
-    font-family: 'roboto', sans-serif;
+    font-family: 'Courier New', monospace;
     font-weight: bolder;
 }
 .photo-card {
